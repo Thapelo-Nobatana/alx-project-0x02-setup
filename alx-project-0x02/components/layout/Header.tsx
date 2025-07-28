@@ -1,10 +1,17 @@
 
+import Link from "next/link";
+
 
 const Header = () => {
     return (
-        <div>
-            <h1>Header</h1>
-        </div>
+        <header className="bg-white flex justify-between items-center">
+            <h1 className="text-xl font-bold">Header</h1>
+            <nav className="space-x-4">
+                <Link href={'/'} className="text-blue-600 hover:underline">Home</Link>
+                <Link href='/home' className="text-blue-600 hover:underline">Page Home</Link>
+                <Link href='/about' className="text-blue-600 hover:underline">About</Link>
+            </nav>
+        </header>
     )
 }
 
