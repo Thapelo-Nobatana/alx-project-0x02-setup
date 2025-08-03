@@ -4,7 +4,7 @@ import UserCard from "@/components/common/UserCard";
 let url = "https://jsonplaceholder.typicode.com/users"
 
 
-export const getStaticProps: GetStaticProps = async () => {
+export async function getStaticProps() {
     const res = await fetch(url)
     const users: UserProps[] = await res.json();
     return {
