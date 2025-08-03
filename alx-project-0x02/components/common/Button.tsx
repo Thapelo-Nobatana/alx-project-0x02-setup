@@ -9,3 +9,5 @@ import { ButtonProps } from "../../interfaces";
     </>
   );
  }
+
+ export default Button;
