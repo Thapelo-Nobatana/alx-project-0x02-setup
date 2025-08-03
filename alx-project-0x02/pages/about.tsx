@@ -5,7 +5,7 @@ const About: React.FC = () => {
     return (
         <div>
             <h1>About!</h1>
-            <Button size="large" shape="rounded" />
+            <Button size="large" shape="rounded-sm" />
         </div>
     )
-}
+};
